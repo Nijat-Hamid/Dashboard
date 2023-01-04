@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Dashboard</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/css/icons/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/css/icons/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/css/icons/favicons/favicon-16x16.png">
+    <!-- Plugins -->
+    <link rel="stylesheet" href="assets/css/plugins.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css?v=2">
+</head>
+<body>
+<main class="dashboard">
+  <div class="container-xl">
+    <div class="dashboard-body d-flex">
+      <nav class="nav-bar">
+        <div class="logo">
+          <a class="text-decoration-none" href="index.html">
+            <img src="assets/img/logo.png" alt="">
+          </a>
+        </div>
+        <div class="navigation-wrapper">
+          <ul class="navigation list-unstyled">
+            <li>
+              <a class="text-decoration-none d-flex align-items-center" href="index.html">
+                <svg width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M25.275 11.961l-8.95-7.955a3.5 3.5 0 00-4.65 0l-8.95 7.955A1.168 1.168 0 003.5 14h2.333v8.167a3.504 3.504 0 003.5 3.5H10.5v-7c0-4.625 7-4.627 7 0v7h1.167a3.504 3.504 0 003.5-3.5V14H24.5a1.168 1.168 0 00.775-2.039z"
+                    fill="#fff" />
+                </svg>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a class="text-decoration-none d-flex align-items-center" href="jobs.html">
+                <svg width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_1_522)" fill="#fff">
+                    <path
+                      d="M15.755 24.496c-6.764 0-12.246-5.482-12.246-12.245C3.509 5.488 8.99.005 15.754.005 22.517.005 28 5.488 28 12.251c0 6.763-5.483 12.245-12.245 12.245zm0-20.992a8.747 8.747 0 100 17.493 8.747 8.747 0 000-17.493z" />
+                    <path
+                      d="M1.76 27.995a1.749 1.749 0 01-1.253-2.981l.01-.01 6.578-6.578a1.788 1.788 0 112.484 2.571l-6.577 6.49a1.75 1.75 0 01-1.242.508z" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_522">
+                      <path fill="#fff" d="M0 0h28v28H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span>Search Job</span>
+              </a>
+            </li>
+            <li>
+              <a class="text-decoration-none d-flex align-items-center" href="app.html">
+                <svg width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_1_530)">
+                    <path
+                      d="M23.795 12.604a3.73 3.73 0 00-1.388.254V5.59h-7.254c.157-.433.239-.91.239-1.403A4.185 4.185 0 0011.205 0 4.185 4.185 0 007.02 4.187c0 .492.082.962.238 1.403H.011v8.11a4.16 4.16 0 012.799-1.09 4.185 4.185 0 014.186 4.19 4.185 4.185 0 01-4.186 4.186 4.16 4.16 0 01-2.799-1.09V28h22.403v-7.269c.433.164.896.254 1.388.254A4.18 4.18 0 0027.99 16.8a4.188 4.188 0 00-4.194-4.194z"
+                      fill="#fff" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_530">
+                      <path fill="#fff" d="M0 0h28v28H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span>Applications</span>
+              </a>
+            </li>
+            <li>
+              <a class="text-decoration-none d-flex align-items-center" href="profile.html">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                  <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                  <path
+                    d="M224 256c-70.7 0-128-57.3-128-128S153.3 0 224 0s128 57.3 128 128s-57.3 128-128 128zm-45.7 48h91.4c11.8 0 23.4 1.2 34.5 3.3c-2.1 18.5 7.4 35.6 21.8 44.8c-16.6 10.6-26.7 31.6-20 53.3c4 12.9 9.4 25.5 16.4 37.6s15.2 23.1 24.4 33c15.7 16.9 39.6 18.4 57.2 8.7v.9c0 9.2 2.7 18.5 7.9 26.3H29.7C13.3 512 0 498.7 0 482.3C0 383.8 79.8 304 178.3 304zM436 218.2c0-7 4.5-13.3 11.3-14.8c10.5-2.4 21.5-3.7 32.7-3.7s22.2 1.3 32.7 3.7c6.8 1.5 11.3 7.8 11.3 14.8v30.6c7.9 3.4 15.4 7.7 22.3 12.8l24.9-14.3c6.1-3.5 13.7-2.7 18.5 2.4c7.6 8.1 14.3 17.2 20.1 27.2s10.3 20.4 13.5 31c2.1 6.7-1.1 13.7-7.2 17.2l-25 14.4c.4 4 .7 8.1 .7 12.3s-.2 8.2-.7 12.3l25 14.4c6.1 3.5 9.2 10.5 7.2 17.2c-3.3 10.6-7.8 21-13.5 31s-12.5 19.1-20.1 27.2c-4.8 5.1-12.5 5.9-18.5 2.4l-24.9-14.3c-6.9 5.1-14.3 9.4-22.3 12.8l0 30.6c0 7-4.5 13.3-11.3 14.8c-10.5 2.4-21.5 3.7-32.7 3.7s-22.2-1.3-32.7-3.7c-6.8-1.5-11.3-7.8-11.3-14.8V454.8c-8-3.4-15.6-7.7-22.5-12.9l-24.7 14.3c-6.1 3.5-13.7 2.7-18.5-2.4c-7.6-8.1-14.3-17.2-20.1-27.2s-10.3-20.4-13.5-31c-2.1-6.7 1.1-13.7 7.2-17.2l24.8-14.3c-.4-4.1-.7-8.2-.7-12.4s.2-8.3 .7-12.4L343.8 325c-6.1-3.5-9.2-10.5-7.2-17.2c3.3-10.6 7.7-21 13.5-31s12.5-19.1 20.1-27.2c4.8-5.1 12.4-5.9 18.5-2.4l24.8 14.3c6.9-5.1 14.5-9.4 22.5-12.9V218.2zm92.1 133.5c0-26.5-21.5-48-48.1-48s-48.1 21.5-48.1 48s21.5 48 48.1 48s48.1-21.5 48.1-48z" />
+                </svg>
+                <span>Profile</span>
+              </a>
+            </li>
+            <li>
+              <a class="text-decoration-none d-flex align-items-center" href="stats.html">
+                <svg width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.833 4.667c-5.833 0-10.5 4.666-10.5 10.5 0 5.833 4.667 10.5 10.5 10.5 5.834 0 10.5-4.667 10.5-10.5h-10.5v-10.5z"
+                    fill="#fff" />
+                  <path d="M15.167 2.333v10.5h10.5c0-5.833-4.667-10.5-10.5-10.5z" fill="#fff" />
+                </svg>
+                <span>Statistics</span>
+              </a>
+            </li>
+            <li class="navigation-active">
+              <a class="text-decoration-none d-flex align-items-center" href="company.html">
+                <svg width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_1_544)" fill="#fff">
+                    <path
+                      d="M19.621 4.516H3.542a1.06 1.06 0 00-1.058 1.059v21.367A1.06 1.06 0 003.542 28h16.079a1.06 1.06 0 001.058-1.058V5.575a1.06 1.06 0 00-1.058-1.059zM16.032 19.42h-8.58a.903.903 0 110-1.806h8.58a.903.903 0 110 1.806zm0-3.613h-8.58a.903.903 0 110-1.806h8.58a.903.903 0 110 1.806zm0-3.612h-8.58a.903.903 0 110-1.807h8.58a.903.903 0 110 1.807z" />
+                    <path
+                      d="M25.516 2.71v19.87c0 1.365-1.097 2.71-3.03 2.71V5.575A2.868 2.868 0 0019.62 2.71H5.515C5.515 1.215 6.802 0 8.385 0h14.261c1.582 0 2.87 1.215 2.87 2.71z" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_544">
+                      <path fill="#fff" d="M0 0h28v28H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span>Companies</span>
+              </a>
+            </li>
+          </ul>
+          <div id="nav-close-btn" class="position-absolute">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M175 175C184.4 165.7 199.6 165.7 208.1 175L255.1 222.1L303 175C312.4 165.7 327.6 165.7 336.1 175C346.3 184.4 346.3 199.6 336.1 208.1L289.9 255.1L336.1 303C346.3 312.4 346.3 327.6 336.1 336.1C327.6 346.3 312.4 346.3 303 336.1L255.1 289.9L208.1 336.1C199.6 346.3 184.4 346.3 175 336.1C165.7 327.6 165.7 312.4 175 303L222.1 255.1L175 208.1C165.7 199.6 165.7 184.4 175 175V175zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z" />
+            </svg>
+          </div>
+        </div>
+        <div class="creator">
+          <p>Job Portal Admin Dashboard</p>
+          <span>© 2022 All Rights Reserved</span>
+          <small>Made by Nijat Hamid</small>
+        </div>
+      </nav>
+      <section class="dashboard-content">
+        <div class="top-bar d-flex justify-content-between align-items-center ">
+          <div class="top-bar-left d-flex align-items-center">
+            <button id="collapseBtn" type="button">
+              <svg width="29" height="18" viewBox="0 0 29 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M22.5 18H1.50001C0.671548 18 0 17.3284 0 16.5C0 15.6716 0.671548 15 1.50001 15H22.5C23.3285 15 24.0001 15.6716 24.0001 16.5C24 17.3284 23.3285 18 22.5 18Z"
+                  fill="black" />
+                <path
+                  d="M27.5 10.5H6.50001C5.67155 10.5 5 9.82848 5 9.00007C5 8.17166 5.67155 7.50006 6.50001 7.50006H27.5C28.3285 7.50006 29.0001 8.17161 29.0001 9.00007C29.0001 9.82853 28.3285 10.5 27.5 10.5Z"
+                  fill="black" />
+                <path
+                  d="M22.5 3.00002H1.50001C0.671548 3.00002 0 2.32847 0 1.50001C0 0.671548 0.671548 0 1.50001 0H22.5C23.3285 0 24.0001 0.671548 24.0001 1.50001C24.0001 2.32847 23.3285 3.00002 22.5 3.00002Z"
+                  fill="black" />
+              </svg>
+            </button>
+            <span>Companies</span>
+          </div>
+          <div class="top-bar-center position-relative">
+            <input placeholder="Search something here..." type="text" name="" id="searchInput">
+            <svg class="position-absolute" width="28px" height="28px" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: none;
+                    stroke: #fff;
+                    stroke-linecap: round;
+                    stroke-linejoin: bevel;
+                    stroke-width: 4px;
+                  }
+                </style>
+              </defs>
+              <g id="ic-actions-search">
+                <circle class="cls-1" cx="13.78723" cy="10.14894" r="7" />
+                <line class="cls-1" x1="8.91255" y1="15.17256" x2="4.03191" y2="20.05319" />
+              </g>
+            </svg>
+          </div>
+          <div class="top-bar-right d-flex align-items-center">
+            <div class="top-bar-badge-1">
+              <button type="button" class="btn btn-primary position-relative">
+                <svg width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_1_549)" fill="#fff">
+                    <path
+                      d="M22.568 26.52c.24 0 .477.091.657.266a4.386 4.386 0 004.326 1.019 8.381 8.381 0 01-.35-6.422c.925-2.643 1.157-5.293.104-7.95a10.195 10.195 0 00-4.965-5.379c.138.74.208 1.495.208 2.258 0 3.236-1.244 6.28-3.504 8.57a12.158 12.158 0 01-8.53 3.628c-.601.01-1.2-.026-1.793-.104a10.378 10.378 0 008.83 5.21 10.234 10.234 0 004.61-1.003.943.943 0 01.407-.093z" />
+                    <path
+                      d="M10.541.002C4.792-.112.013 4.54 0 10.286a10.23 10.23 0 00.836 4.104 8.38 8.38 0 01-.35 6.421 4.386 4.386 0 004.327-1.019.946.946 0 011.064-.173 10.221 10.221 0 004.609 1.003c5.704-.085 10.172-4.613 10.172-10.31 0-5.573-4.539-10.197-10.117-10.31zm-5.722 11.85a1.494 1.494 0 01-1.496-1.493c0-.825.67-1.493 1.496-1.493a1.494 1.494 0 110 2.986zm5.51 0a1.494 1.494 0 01-1.496-1.493c0-.825.67-1.493 1.496-1.493a1.494 1.494 0 110 2.986zm5.51 0a1.494 1.494 0 01-1.496-1.493 1.494 1.494 0 012.991 0c0 .824-.67 1.493-1.496 1.493z" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_549">
+                      <path fill="#fff" d="M0 0h28v28H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-badge">
+                  18
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </button>
+            </div>
+            <div class="top-bar-badge-2 ms-4 me-4">
+              <button type="button" class="btn btn-primary position-relative">
+                <svg width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M10.453 25.668C11.06 27.036 12.409 28 14 28c1.591 0 2.94-.964 3.548-2.332-1.122.055-2.29.092-3.548.092a71.84 71.84 0 01-3.548-.092zm15.9-5.928c-1.476-1.861-3.954-5.52-3.954-9.1 0-3.55-2.28-6.742-5.6-7.916A2.803 2.803 0 0014.001 0a2.802 2.802 0 00-2.8 2.724c-3.32 1.174-5.6 4.367-5.6 7.916 0 3.58-2.477 7.238-3.954 9.1a2.377 2.377 0 00-.406 2.196 2.312 2.312 0 001.552 1.523c1.295.383 3.417.813 6.654 1.032A67.71 67.71 0 0014 24.64c1.645 0 3.151-.055 4.553-.149 3.237-.22 5.359-.65 6.655-1.032a2.31 2.31 0 001.55-1.523 2.38 2.38 0 00-.406-2.196z"
+                    fill="#3E4954" />
+                </svg>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-badge">
+                  52
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </button>
+            </div>
+            <div class="top-bar-profile ms-4 position-relative ">
+              <button type="button" class="d-flex dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="top-bar-img">
+                  <img src="assets/img/prof.jpg" alt="">
+                </div>
+                <div class="top-bar-user">
+                  <p>Nijat Hamid</p>
+                  <span>Admin</span>
+                </div>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item active" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Messages</a></li>
+                <li><a class="dropdown-item" href="#">Notifications</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="dashboard-inner-content">
+          <div class="companies-row">
+            <div class="row">
+              <div class="col-12" id="companyGrid">
+                <div class="job-search-bar">
+                  <form action="#" class="job-form d-flex align-items-md-center">
+                    <div id="job-location" class="input-group  align-items-center">
+                      <button class="btn btn-outline-secondary" type="button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M12 0C6.93398 0 2.8125 4.12148 2.8125 9.1875C2.8125 10.8091 3.24094 12.4034 4.05145 13.7979C4.24041 14.123 4.45162 14.4398 4.67934 14.7396L11.6008 24H12.3991L19.3207 14.7397C19.5483 14.4398 19.7595 14.1231 19.9485 13.7979C20.7591 12.4034 21.1875 10.8091 21.1875 9.1875C21.1875 4.12148 17.066 0 12 0ZM12 12.2344C10.32 12.2344 8.95312 10.8675 8.95312 9.1875C8.95312 7.50745 10.32 6.14062 12 6.14062C13.68 6.14062 15.0469 7.50745 15.0469 9.1875C15.0469 10.8675 13.68 12.2344 12 12.2344Z"
+                            fill="#40189D" />
+                        </svg>
+                      </button>
+                      <select class="form-select" id="inputSelect" aria-label="Example select with button addon">
+                        <option selected>Around You</option>
+                        <option value="1">Azerbaijan</option>
+                        <option value="2">Poland</option>
+                        <option value="3">London</option>
+                      </select>
+                    </div>
+                    <div id="job-search" class="input-group">
+                      <input type="text" class="form-control"
+                        placeholder="Search by Title, Company or any jobs keyword..."
+                        aria-label="Recipient's username with two button addons">
+                      <button class="btn btn-outline-secondary d-flex align-items-center cust-btn-1" type="button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M3 6H14C14 6.53043 14.2107 7.03914 14.5858 7.41421C14.9609 7.78929 15.4696 8 16 8H18C18.5304 8 19.0391 7.78929 19.4142 7.41421C19.7893 7.03914 20 6.53043 20 6H21C21.2652 6 21.5196 5.89464 21.7071 5.70711C21.8946 5.51957 22 5.26522 22 5C22 4.73478 21.8946 4.48043 21.7071 4.29289C21.5196 4.10536 21.2652 4 21 4H20C20 3.46957 19.7893 2.96086 19.4142 2.58579C19.0391 2.21071 18.5304 2 18 2H16C15.4696 2 14.9609 2.21071 14.5858 2.58579C14.2107 2.96086 14 3.46957 14 4H3C2.73478 4 2.48043 4.10536 2.29289 4.29289C2.10536 4.48043 2 4.73478 2 5C2 5.26522 2.10536 5.51957 2.29289 5.70711C2.48043 5.89464 2.73478 6 3 6ZM16 4H18V5V6H16V4ZM21 11H12C12 10.4696 11.7893 9.96086 11.4142 9.58579C11.0391 9.21071 10.5304 9 10 9H8C7.46957 9 6.96086 9.21071 6.58579 9.58579C6.21071 9.96086 6 10.4696 6 11H3C2.73478 11 2.48043 11.1054 2.29289 11.2929C2.10536 11.4804 2 11.7348 2 12C2 12.2652 2.10536 12.5196 2.29289 12.7071C2.48043 12.8946 2.73478 13 3 13H6C6 13.5304 6.21071 14.0391 6.58579 14.4142C6.96086 14.7893 7.46957 15 8 15H10C10.5304 15 11.0391 14.7893 11.4142 14.4142C11.7893 14.0391 12 13.5304 12 13H21C21.2652 13 21.5196 12.8946 21.7071 12.7071C21.8946 12.5196 22 12.2652 22 12C22 11.7348 21.8946 11.4804 21.7071 11.2929C21.5196 11.1054 21.2652 11 21 11ZM8 13V11H10V12V13H8ZM21 18H18C18 17.4696 17.7893 16.9609 17.4142 16.5858C17.0391 16.2107 16.5304 16 16 16H14C13.4696 16 12.9609 16.2107 12.5858 16.5858C12.2107 16.9609 12 17.4696 12 18H3C2.73478 18 2.48043 18.1054 2.29289 18.2929C2.10536 18.4804 2 18.7348 2 19C2 19.2652 2.10536 19.5196 2.29289 19.7071C2.48043 19.8946 2.73478 20 3 20H12C12 20.5304 12.2107 21.0391 12.5858 21.4142C12.9609 21.7893 13.4696 22 14 22H16C16.5304 22 17.0391 21.7893 17.4142 21.4142C17.7893 21.0391 18 20.5304 18 20H21C21.2652 20 21.5196 19.8946 21.7071 19.7071C21.8946 19.5196 22 19.2652 22 19C22 18.7348 21.8946 18.4804 21.7071 18.2929C21.5196 18.1054 21.2652 18 21 18ZM14 20V18H16V19V20H14Z"
+                            fill="#272643" />
+                        </svg>
+                        <span>FILTER</span></button>
+                      <button class="btn btn-outline-secondary d-flex align-items-center cust-btn-2 ms-3" type="button">
+                        <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <defs>
+                            <style>
+                              .cls-1 {
+                                fill: none;
+                                stroke: #fff;
+                                stroke-linecap: round;
+                                stroke-linejoin: bevel;
+                                stroke-width: 2.5px;
+                              }
+                            </style>
+                          </defs>
+                          <g id="ic-actions-search">
+                            <circle class="cls-1" cx="13.78723" cy="10.14894" r="7" />
+                            <line class="cls-1" x1="8.91255" y1="15.17256" x2="4.03191" y2="20.05319" />
+                          </g>
+                        </svg>
+                        <span>FIND</span></button>
+                    </div>
+                  </form>
+                </div>
+                <div class="job-suggestions d-flex align-items-xl-center">
+                  <p class="suggestions-name">Suggestions:</p>
+                  <div class="check-suggestions skill-suggestion">
+                    <ul class="list-unstyled d-flex align-items-center flex-wrap">
+                      <li><a href="">Your Skill</a></li>
+                      <li><a href="">Programmer</a></li>
+                      <li><a href="">Software Engineer</a></li>
+                      <li><a href="">Photographer</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="jobs-settings">
+                  <div class="jobs-settings-container d-flex justify-content-between">
+                    <div class="jobs-settings-checks d-flex align-items-lg-center order-md-1">
+                      <div class="jobs-list job-d-list d-flex align-items-md-center ">
+                        <div class="jobs-sort">
+                          <div id="job-filter" class="input-group align-items-center">
+                            <button class="btn btn-outline-secondary" type="button">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                  d="M10.2932 16.293L8.00016 18.5859V3C8.00016 2.73478 7.89481 2.48043 7.70727 2.29289C7.51973 2.10536 7.26538 2 7.00016 2C6.73495 2 6.48059 2.10536 6.29306 2.29289C6.10552 2.48043 6.00016 2.73478 6.00016 3V18.5859L3.70716 16.293C3.51856 16.1108 3.26596 16.01 3.00376 16.0123C2.74156 16.0146 2.49075 16.1198 2.30534 16.3052C2.11994 16.4906 2.01477 16.7414 2.01249 17.0036C2.01021 17.2658 2.111 17.5184 2.29316 17.707L6.29316 21.707C6.48086 21.8942 6.73513 21.9993 7.00021 21.9993C7.2653 21.9993 7.51956 21.8942 7.70726 21.707L11.7073 17.707C11.8901 17.5185 11.9914 17.2657 11.9894 17.0031C11.9874 16.7405 11.8822 16.4893 11.6965 16.3036C11.5109 16.118 11.2596 16.0128 10.997 16.0108C10.7345 16.0088 10.4816 16.1102 10.2932 16.293Z"
+                                  fill="#272643" />
+                                <path
+                                  d="M11.0002 6H21.0002C21.2655 6 21.5198 5.89464 21.7074 5.7071C21.8949 5.51957 22.0002 5.26521 22.0002 5C22.0002 4.73478 21.8949 4.48043 21.7074 4.29289C21.5198 4.10536 21.2655 4 21.0002 4H11.0002C10.735 4 10.4807 4.10536 10.2931 4.29289C10.1056 4.48043 10.0002 4.73478 10.0002 5C10.0002 5.26521 10.1056 5.51957 10.2931 5.7071C10.4807 5.89464 10.735 6 11.0002 6Z"
+                                  fill="#272643" />
+                                <path
+                                  d="M21.0002 8H11.0002C10.735 8 10.4807 8.10536 10.2931 8.29289C10.1056 8.48043 10.0002 8.73478 10.0002 9C10.0002 9.26521 10.1056 9.51957 10.2931 9.7071C10.4807 9.89464 10.735 10 11.0002 10H21.0002C21.2655 10 21.5198 9.89464 21.7074 9.7071C21.8949 9.51957 22.0002 9.26521 22.0002 9C22.0002 8.73478 21.8949 8.48043 21.7074 8.29289C21.5198 8.10536 21.2655 8 21.0002 8Z"
+                                  fill="#272643" />
+                                <path
+                                  d="M18.0002 12H11.0002C10.735 12 10.4807 12.1054 10.2931 12.2929C10.1056 12.4804 10.0002 12.7348 10.0002 13C10.0002 13.2652 10.1056 13.5196 10.2931 13.7071C10.4807 13.8947 10.735 14 11.0002 14H18.0002C18.2655 14 18.5198 13.8947 18.7074 13.7071C18.8949 13.5196 19.0002 13.2652 19.0002 13C19.0002 12.7348 18.8949 12.4804 18.7074 12.2929C18.5198 12.1054 18.2655 12 18.0002 12Z"
+                                  fill="#272643" />
+                              </svg>
+                            </button>
+                            <select class="form-select" id="selection" aria-label="Example select with button addon">
+                              <option selected>Newest</option>
+                              <option value="1">Oldest</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="jobs-grid ms-md-3">
+                          <button type="button" id="gridFull">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M6 7.5H3C2.17275 7.5 1.5 6.82687 1.5 6V3C1.5 2.17313 2.17275 1.5 3 1.5H6C6.82725 1.5 7.5 2.17313 7.5 3V6C7.5 6.82687 6.82725 7.5 6 7.5ZM3 3V6H6.00113L6 3H3ZM22.5 4.5C22.5 4.08544 22.1642 3.75 21.75 3.75H9.75C9.33581 3.75 9 4.08544 9 4.5C9 4.91456 9.33581 5.25 9.75 5.25H21.75C22.1642 5.25 22.5 4.91456 22.5 4.5ZM6 15H3C2.17275 15 1.5 14.3269 1.5 13.5V10.5C1.5 9.67313 2.17275 9 3 9H6C6.82725 9 7.5 9.67313 7.5 10.5V13.5C7.5 14.3269 6.82725 15 6 15ZM3 10.5V13.5H6.00113L6 10.5H3ZM22.5 12C22.5 11.5854 22.1642 11.25 21.75 11.25H9.75C9.33581 11.25 9 11.5854 9 12C9 12.4146 9.33581 12.75 9.75 12.75H21.75C22.1642 12.75 22.5 12.4146 22.5 12ZM6 22.5H3C2.17275 22.5 1.5 21.8269 1.5 21V18C1.5 17.1731 2.17275 16.5 3 16.5H6C6.82725 16.5 7.5 17.1731 7.5 18V21C7.5 21.8269 6.82725 22.5 6 22.5ZM3 18V21H6.00113L6 18H3ZM22.5 19.5C22.5 19.0854 22.1642 18.75 21.75 18.75H9.75C9.33581 18.75 9 19.0854 9 19.5C9 19.9146 9.33581 20.25 9.75 20.25H21.75C22.1642 20.25 22.5 19.9146 22.5 19.5Z"
+                                fill="#272643" />
+                            </svg>
+                          </button>
+                          <button type="button" id="gridSeperate">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="#272643"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M10 1H2C1.73478 1 1.48043 1.10536 1.29289 1.29289C1.10536 1.48043 1 1.73478 1 2V10C1 10.2652 1.10536 10.5196 1.29289 10.7071C1.48043 10.8946 1.73478 11 2 11H10C10.2652 11 10.5196 10.8946 10.7071 10.7071C10.8946 10.5196 11 10.2652 11 10V2C11 1.73478 10.8946 1.48043 10.7071 1.29289C10.5196 1.10536 10.2652 1 10 1ZM9 9H3V3H9V9Z"
+                                fill="#272643" />
+                              <path
+                                d="M22 1H14C13.7348 1 13.4804 1.10536 13.2929 1.29289C13.1054 1.48043 13 1.73478 13 2V10C13 10.2652 13.1054 10.5196 13.2929 10.7071C13.4804 10.8946 13.7348 11 14 11H22C22.2652 11 22.5196 10.8946 22.7071 10.7071C22.8946 10.5196 23 10.2652 23 10V2C23 1.73478 22.8946 1.48043 22.7071 1.29289C22.5196 1.10536 22.2652 1 22 1ZM21 9H15V3H21V9Z"
+                                fill="#272643" />
+                              <path
+                                d="M10 13H2C1.73478 13 1.48043 13.1054 1.29289 13.2929C1.10536 13.4804 1 13.7348 1 14V22C1 22.2652 1.10536 22.5196 1.29289 22.7071C1.48043 22.8946 1.73478 23 2 23H10C10.2652 23 10.5196 22.8946 10.7071 22.7071C10.8946 22.5196 11 22.2652 11 22V14C11 13.7348 10.8946 13.4804 10.7071 13.2929C10.5196 13.1054 10.2652 13 10 13ZM9 21H3V15H9V21Z"
+                                fill="#272643" />
+                              <path
+                                d="M22 13H14C13.7348 13 13.4804 13.1054 13.2929 13.2929C13.1054 13.4804 13 13.7348 13 14V22C13 22.2652 13.1054 22.5196 13.2929 22.7071C13.4804 22.8946 13.7348 23 14 23H22C22.2652 23 22.5196 22.8946 22.7071 22.7071C22.8946 22.5196 23 22.2652 23 22V14C23 13.7348 22.8946 13.4804 22.7071 13.2929C22.5196 13.1054 22.2652 13 22 13ZM21 21H15V15H21V21Z"
+                                fill="#272643" />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="jobs-counter order-md-0">Showing 35 Companies<span>Based your preferences</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="jobs-list-grid">
+                  <div class="row" id="gridList">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
+                      <div class="company-grid-item-single">
+                        <div class="company-grid-item">
+                          <div class="company-grid-item-img">
+                            <img src="assets/img/data.jpg" alt="">
+                          </div>
+                          <h4 class="company-grid-item-name">Simonis Ltd</h4>
+                          <span class="company-grid-item-txt">Internet Service Porvider</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
+                      <div class="company-grid-item-single">
+                        <div class="company-grid-item">
+                          <div class="company-grid-item-img">
+                            <img src="assets/img/google.png" alt="">
+                          </div>
+                          <h4 class="company-grid-item-name">Funk Inc</h4>
+                          <span class="company-grid-item-txt">IT Department</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
+                      <div class="company-grid-item-single">
+                        <div class="company-grid-item">
+                          <div class="company-grid-item-img">
+                            <img src="assets/img/microsoft.png" alt="">
+                          </div>
+                          <h4 class="company-grid-item-name">Highspeed Studios</h4>
+                          <span class="company-grid-item-txt">Creative Design Agency</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
+                      <div class="company-grid-item-single">
+                        <div class="company-grid-item">
+                          <div class="company-grid-item-img">
+                            <img src="assets/img/twit.jpg" alt="">
+                          </div>
+                          <h4 class="company-grid-item-name">Mosciski Inc</h4>
+                          <span class="company-grid-item-txt">Creative Design Agency</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
+                      <div class="company-grid-item-single">
+                        <div class="company-grid-item">
+                          <div class="company-grid-item-img">
+                            <img src="assets/img/amd.png" alt="">
+                          </div>
+                          <h4 class="company-grid-item-name">Incubator Studios</h4>
+                          <span class="company-grid-item-txt">Software House</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
+                      <div class="company-grid-item-single">
+                        <div class="company-grid-item">
+                          <div class="company-grid-item-img">
+                            <img src="assets/img/ryzen.png" alt="">
+                          </div>
+                          <h4 class="company-grid-item-name">Naonatu Inc.</h4>
+                          <span class="company-grid-item-txt">Creative Design Agency</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
+                      <div class="company-grid-item-single">
+                        <div class="company-grid-item">
+                          <div class="company-grid-item-img">
+                            <img src="assets/img/eye.png" alt="">
+                          </div>
+                          <h4 class="company-grid-item-name">ColoColo Studios</h4>
+                          <span class="company-grid-item-txt">Internet Service Porvider</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
+                      <div class="company-grid-item-single">
+                        <div class="company-grid-item">
+                          <div class="company-grid-item-img">
+                            <img src="assets/img/soft.png" alt="">
+                          </div>
+                          <h4 class="company-grid-item-name">Simonis Ltd</h4>
+                          <span class="company-grid-item-txt">Internet Service Porvider</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
+                      <div class="company-grid-item-single">
+                        <div class="company-grid-item">
+                          <div class="company-grid-item-img">
+                            <img src="assets/img/adobe.jpg" alt="">
+                          </div>
+                          <h4 class="company-grid-item-name">Funk Inc</h4>
+                          <span class="company-grid-item-txt">IT Department</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
+                      <div class="company-grid-item-single">
+                        <div class="company-grid-item">
+                          <div class="company-grid-item-img">
+                            <img src="assets/img/soft.png" alt="">
+                          </div>
+                          <h4 class="company-grid-item-name">Simonis Ltd</h4>
+                          <span class="company-grid-item-txt">Internet Service Porvider</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
+                      <div class="company-grid-item-single">
+                        <div class="company-grid-item">
+                          <div class="company-grid-item-img">
+                            <img src="assets/img/data.jpg" alt="">
+                          </div>
+                          <h4 class="company-grid-item-name">Simonis Ltd</h4>
+                          <span class="company-grid-item-txt">Internet Service Porvider</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
+                      <div class="company-grid-item-single">
+                        <div class="company-grid-item">
+                          <div class="company-grid-item-img">
+                            <img src="assets/img/eye.png" alt="">
+                          </div>
+                          <h4 class="company-grid-item-name">Simonis Ltd</h4>
+                          <span class="company-grid-item-txt">Internet Service Porvider</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <nav aria-label="Page navigation example"
+                  class="d-flex justify-content-between align-items-start pagination-nav">
+                  <span class="pagination-text">Showing 9 from 160 data</span>
+                  <ul class="pagination pagination-jobs justify-content-end">
+                    <li class="page-item disabled me-3">
+                      <a class="page-link"><svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 18.5L6 12.5L12 6.5" stroke="#272643" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <path d="M19 18.5L13 12.5L19 6.5" stroke="#272643" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+                        Previous</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item ms-3">
+                      <a class="page-link" href="#">Next<svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12 18.5L18 12.5L12 6.5" stroke="#272643" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <path d="M5 18.5L11 12.5L5 6.5" stroke="#272643" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="col-3 company-modal-full">
+                <div class="company-modal" id="companyModal">
+                  <div class="cm-close-btn">
+                    <button type="button" id="modalClose">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M2.27509 23.8497C1.68667 23.8839 1.10799 23.6883 0.661067 23.3041C-0.220356 22.4174 -0.220356 20.9854 0.661067 20.0988L19.9613 0.798427C20.8781 -0.0594133 22.3166 -0.0117265 23.1745 0.90503C23.9502 1.73405 23.9954 3.00827 23.2803 3.89014L3.86635 23.3041C3.42519 23.6828 2.85579 23.878 2.27509 23.8497Z"
+                          fill="#717171" />
+                        <path
+                          d="M21.5525 23.8497C20.9562 23.8471 20.3846 23.6104 19.9612 23.1905L0.660883 3.89006C-0.155709 2.93647 -0.0446888 1.50137 0.9089 0.684702C1.76 -0.0441519 3.01521 -0.0441519 3.86624 0.684702L23.2802 19.985C24.1967 20.8431 24.2441 22.2817 23.3861 23.1982C23.3519 23.2347 23.3167 23.27 23.2802 23.3041C22.8048 23.7175 22.1792 23.915 21.5525 23.8497Z"
+                          fill="#717171" />
+                      </svg>
+
+                    </button>
+                  </div>
+                  <div class="cm-img">
+                    
+                  </div>
+                  <div class="cm-details text-center">
+                    <h3 class="cm-name"></h3>
+                    <span class="cm-category"></span>
+                  </div>
+                  <div class="cm-follow text-center">
+                    <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+                    <label class="btn follow-btn" for="btn-check">+ Follow</label>
+                  </div>
+                  <div class="cm-badges d-flex flex-wrap justify-content-between">
+                    <div class="cm-badge-wrapper d-flex align-items-center">
+                      <div class="cm-badge-pic">
+                        <img src="assets/css/icons/others/userbadge.svg" alt="">
+                      </div>
+                      <div class="cm-badge-detail">
+                        <div>80 - 100</div>
+                        <span>Employee</span>
+                      </div>
+                    </div>
+                    <div class="cm-badge-wrapper d-flex align-items-center">
+                      <div class="cm-badge-pic">
+                        <img src="assets/css/icons/others/userbadge1.svg" alt="">
+                      </div>
+                      <div class="cm-badge-detail">
+                        <div>4.5</div>
+                        <span>Reviews</span>
+                      </div>
+                    </div>
+                    <div class="cm-badge-wrapper d-flex align-items-center">
+                      <div class="cm-badge-pic">
+                        <img src="assets/css/icons/others/userbadge2.svg" alt="">
+                      </div>
+                      <div class="cm-badge-detail">
+                        <div>London, England</div>
+                        <span>Location</span>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="cm-about">
+                    <div class="about-company">About Company</div>
+                    <p class="desc-company">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                      tempor incididunt ut labore et dolore magna aliqua. <br> <br> Duis aute irure dolor in
+                      reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                      occaecat cupidatat non proident, sunt in
+                    </p>
+                  </div>
+                  <div class="cm-buttons d-flex justify-content-between align-items-center flex-wrap">
+                    <a class="vacancy-btn" href="#">23 Vacancy</a>
+                    <a class="more-detail-btn" href="#">More Detail</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</main>
+<!-- Plugins JS -->
+<script src="assets/js/plugins.min.js"></script>
+<script>
+  // Jobs Grid type changer
+  let gridFull = document.getElementById('gridFull'),
+    gridSeperate = document.getElementById('gridSeperate'),
+    gridList = document.querySelectorAll('#gridList > div');
+  gridFull.onclick = () => {
+    gridSeperate.classList.remove('active');
+    gridFull.classList.add('active');
+    gridList.forEach(function (gridItem) {
+      gridItem.classList.remove('col-sm-6', 'col-md-4', 'col-lg-3', 'col-lg-4')
+    })
+  }
+  gridSeperate.onclick = () => {
+    gridFull.classList.remove('active');
+    gridSeperate.classList.add('active');
+    gridList.forEach(function (gridItem) {
+      if (companyGrid.classList.contains('col-12')) {
+        gridItem.classList.add('col-sm-6', 'col-md-4', 'col-lg-3')
+      } else {
+        gridItem.classList.add('col-sm-6', 'col-md-4', 'col-lg-4')
+      }
+    })
+  }
+  // Modal Show/Hide Changer with dynamically adjust col's and Append grid item details to Modal.
+  let modalClose = document.getElementById('modalClose'),
+    companyModal = document.getElementById('companyModal'),
+    companyGrid = document.getElementById('companyGrid'),
+    gridItemSingle = document.querySelectorAll('.company-grid-item-single'),
+    companyModalFull = document.querySelector('.company-modal-full'),
+    companyModalImg = document.querySelector('.cm-img'),
+    companyModalName = document.querySelector('.cm-name'),
+    companyModalCategory = document.querySelector('.cm-category');
+  const responsive = window.matchMedia("(max-width: 991.98px)");
+  function modal(m) {
+    gridItemSingle.forEach((itemSingle) => {
+      itemSingle.onclick = () => {
+        if (!m.matches) {
+          companyModal.style.display = 'block';
+          companyGrid.classList.replace('col-12', 'col-9');
+          gridList.forEach(function (gridItem) {
+            gridItem.classList.replace('col-lg-3', 'col-lg-4')
+          });
+          modalClose.onclick = () => {
+            companyModal.style.display = 'none';
+            companyGrid.classList.replace('col-9', 'col-12');
+            gridList.forEach(function (gridItem) {
+              gridItem.classList.replace('col-lg-4', 'col-lg-3')
+            })
+          }
+        } else {
+          companyModal.style.display = 'block';
+          companyModalFull.style.display = 'block';
+          modalClose.onclick = () => {
+            companyModalFull.style.display = 'none';
+            companyModal.style.display = 'none';
+          }
+        }
+        companyModalName.innerText = itemSingle.querySelector('.company-grid-item-name').innerText;
+        companyModalCategory.innerText = itemSingle.querySelector('.company-grid-item-txt').innerText;
+        companyModalImg.innerHTML = itemSingle.querySelector('.company-grid-item-img').innerHTML;
+      }
+    })
+  }
+  modal(responsive);
+  responsive.addEventListener("change", modal);
+</script>
+  <script src="assets/js/scripts.js"></script>
+</body>
+</html>
